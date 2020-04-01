@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "397490453335",
+    "firebase_url": "https://fir-firestore-6ff5d.firebaseio.com",
+    "project_id": "fir-firestore-6ff5d",
+    "storage_bucket": "fir-firestore-6ff5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397490453335:android:6cef28eba7b33dda599c12",
+        "android_client_info": {
+          "package_name": "com.azhara.firebasefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397490453335-nctdf2sqp29v85joua04ttfvpa02nn9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8gmxfImLYJv7qlWmq62aoxpejcx5bTIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397490453335-nctdf2sqp29v85joua04ttfvpa02nn9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
