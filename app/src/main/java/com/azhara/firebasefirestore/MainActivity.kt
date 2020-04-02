@@ -3,6 +3,7 @@ package com.azhara.firebasefirestore
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.azhara.firebasefirestore.adapter.DiaryAdapter
 import com.azhara.firebasefirestore.model.DiaryEntity
@@ -30,15 +31,17 @@ class MainActivity : AppCompatActivity() {
     fun getDataDiary(){
         val data = db.collection("diary")
         val dataDiary = ArrayList<DiaryEntity>()
+        loading.visibility = View.VISIBLE
         data.get()
             .addOnSuccessListener { result ->
+                loading.visibility = View.GONE
                 for (data in result){
                     val diary = data.toObject(DiaryEntity::class.java)
                     diary.id = data.id
                     dataDiary.addAll(listOf(diary))
                     Log.d("Activity", "$diary")
                 }
-                diaryAdapter.setData(dataDiary)
+                diaryAdapter.submitList(dataDiary)
             }
 
     }
